@@ -1,0 +1,12 @@
+<html>
+    <body>
+      <% for (let i = 0; i <= messages.length - 1; i++) { %>
+        <div class="messageMain">
+            <%= messages[i].user %> wrote "<%= messages[i].text %>" on <%= messages[i].added %> 
+        </div>
+      <% } %> 
+      <a href ="/new">
+        <span> Click here to send new message</span>
+      </a>
+    </body>
+</html>
